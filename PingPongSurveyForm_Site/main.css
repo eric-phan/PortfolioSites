@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 80em;
+  }
+}
+
+@media (min-width: 768px) {
+ 
+h1{
+  font-weight: bold;
+  font-size: 45px;
+  right: 50px;
+  }}
+@media (min-width: 480px) {
+  .form-group {
+    padding: 2.5rem;
+  }
+}
+body {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-white);
+  margin: 0;
+}
+  
+  
+#title {
+  text-align: center;
+  posiition: relative;
+}
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(20, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://images.pexels.com/photos/976873/pexels-photo-976873.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#description {
+  text-align: center;
+  posiition: relative;
+}
+
+.form-control {
+  padding: 0.375rem 0.75rem;
+  display: block;
+  width: 41%;
+  height: 2.375rem;
+  margin: auto;
+  margin-bottom: 20px; /**/this is to change height bw and the textboxes /**/ 
+} 
+ 
+  
+
+
+
+.form-group {
+  display: block;
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  font-size: 20px;
+  }
+
+label {
+  display: block;
+  position: relative;
+  margin: auto 19rem 1rem;
+
+}
+
+
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  
+}
+
+#feedback {
+    display: block;
+    margin: 0 auto;
+
+}
+
+#dropdown {
+  width: 43.05%;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+  
+
+.input-checkbox, .input-radio {
+  display: inline-block;
+  margin: 0 auto; 
+  height: 13px;
+}
+
+
+@media (max-width: 800px) {
+  #name-label, #email-label, #number-label, #dropdown, #paddle, #choice, #rightleft, #rightleft1, #feedback1{
+    right: 140px;
+  }}
+
+@media (max-width: 800px) {
+.submit-button, textarea{
+    width: 60%;
+  
+  }
+
+  .container{
+    position: absolute; 
+    width: 100%;
+    margin: 0 auto;
+    left: -0px;
+    overflow: hidden;
+    /** overflow hides the extra space to the righ when vp is halved **/
+  }
+
+  #feedback1, #rightleft, #rightleft1, #paddle{
+    width: 100%;
+
+  }
+  #feedback1 {
+    width: 250px; /** must have the width set **/
+    word-wrap: break-word;   
+  }
+  #dropdown {
+    font-size: px;
+  }
+
+  
+
+ 
+  
+
+
+
