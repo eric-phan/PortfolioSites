@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div> <h1 id="title"> Ping Pong Tournament Signup </h1> 
+        
+          <p id="description"><i> Thank you for taking the time to fill out this survey</i></p>
+        </div>
+        <form id="survey-form">
+          <div class="form-group">   
+          <label id="name-label" for="name">Name</label>
+          <input
+                 id="name"
+                 type= "text"
+                 name="name"
+                 placeholder="Enter your name"
+                 class="form-control"
+                 required 
+                />
+          </div>
+          
+          <div class="form-group">  
+           <label id="email-label" for="email">Email</label>
+              <input
+                type= "email"
+                name= "email"
+                id= "email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+              />
+          </div>
+          
+          <div class="form-group">
+            
+              <label id="number-label" for="number"
+                >Age</label
+              >
+           <input
+                 id="number"
+                 type= "number"
+                 name="age"
+                 placeholder="Enter your age"
+                 class="form-control"
+                 min="10"
+                 max="100"
+                 required 
+                />
+          </div>
+          
+         
+          <div class="form-group">
+             <label for="experience" id="dropdown"> <p> Which of the following describes your experience level in Ping Pong? </p>
+          
+            </label>
+          <select id="dropdown" name="experience" class="form-control" required>
+          <option disabled selected value>Select current experience level</option>
+                  
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Expert">Expert</option>
+        <option value="World Ranked">World Ranked</option>
+        </select>
+               
+          </div>
+          
+          
+          <div class="form-group">  
+            <label id="paddle">
+              <p> Which option is your paddle grip? </p>
+            <input
+                 id="radio"
+                 type="radio"
+                 value="Traditional"
+                 class="input-radio"  
+                 name="Traditional-Pen Hold"/>Traditional
+            </label>
+          </div>
+              
+             <div class="form-group">
+             <label id="paddle">  
+              <input
+                 id="choice"
+                 type="radio"
+                     class="input-radio"
+                 value="Pen Hold"
+            name="Traditional-Pen Hold"
+                 />Pen Hold
+            </label>
+          </div>
+        
+              
+          
+            
+          
+          <div class="form-group">
+            <label id="rightleft"
+                       " for="right-left">
+              <p> Which is your dominant hand? </p> 
+          <input
+                 id="checkbox"
+                 type="checkbox"
+                 class="input-checkbox"
+                 value="right"
+                 name="right-left"
+                 />Right</label>
+          </div>
+          
+           <div class="form-group">
+            <label id="rightleft1" for="right-left"> 
+          <input
+                 id="checkbox"
+                 type="checkbox"
+                 class="input-checkbox"
+                 value="right"
+                 name="right-left"
+                 />Left</label>
+          </div>
+          
+              <div class="form-group">
+                <label id= "feedback1" for="feedback">Please leave and comments and suggestions here</label>
+                <textarea 
+                   id="feedback" 
+                   name="feedback"
+                   rows="5"
+                   cols="48"></textarea>
+                     
+          </div>
+          
+             <div class="form-group">
+                 <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          
+                
+        </form>
+        </div>
+    
+</body>
+</html>
