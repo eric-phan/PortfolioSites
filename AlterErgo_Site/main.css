@@ -22,16 +22,17 @@ p {
 }
 header {
   display: flex;
-  margin-left: rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* margin-top: rem; */
   padding: 0;
 }
+
 header h4:first-child {
   margin-top: 0.9rem;
   margin-bottom: 0rem;
   font-style: italic;
   font-size: 1.4rem;
+  padding-left: 1.5rem;
 }
 header nav + h4 {
   font-size: 0.9rem;
@@ -400,6 +401,15 @@ section h3 + button {
   body > div > div > section > section:nth-child(3) > div {
     display: none;
   }
+  /* @media screen and (max-width: 1304px) and (min-width:800px) {
+    .video {
+      padding: 0;
+      display: block;
+      margin: 0 auto;
+      align-self: center;
+      justify-content: center;
+
+    } */
 
   @media screen and (max-width: 1500px) {
     .opening header {
@@ -413,17 +423,94 @@ section h3 + button {
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 412px) {
+    body > div > header > h4:nth-child(1) {
+      padding: 0;
+    }
     body > div > section.secondsec > div.video > iframe {
       width: 20rem;
+    }
+    #firstsec {
+      padding: 0 2rem;
+    }
+    #firstsec > section h2 {
+      font-size: 1.1rem;
     }
 
     main section h1 {
       font-size: 2.5rem;
     }
+    main section {
+      padding: 4rem 0 0 4.2rem;
+    }
 
+    #main > section > h3 {
+      padding-right: 4rem;
+    }
+
+    .firstsec {
+      margin: 2.5rem 0;
+      height: 650px;
+    }
     .firstsec section {
       width: 9rem;
+      padding: 0 0.5rem;
     }
+
+    #main > section > h1 {
+      margin-right: 6rem;
+    }
+
+    #fourthsec {
+      height: 900px;
+    }
+
+    #fourthsec > div {
+      margin-top: 23rem;
+    }
+    #lastsec {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #firstsec {
+    padding: 0 2rem;
+  }
+  #firstsec > section h2 {
+    font-size: 1.1rem;
+  }
+
+  main section h1 {
+    font-size: 2.5rem;
+  }
+  main section {
+    padding: 4rem 0 0 4.2rem;
+  }
+
+  body > div > section.secondsec > div.video > iframe {
+    width: 20rem;
+  }
+
+  .firstsec {
+    margin: 2.5rem 0;
+    height: 650px;
+  }
+  .firstsec section {
+    width: 9rem;
+    padding: 0 0.5rem;
+  }
+
+  #main > section > h1 {
+    margin-right: 6rem;
+  }
+
+  #fourthsec {
+    height: 900px;
+  }
+
+  #fourthsec > div {
+    margin-top: 23rem;
   }
 }
